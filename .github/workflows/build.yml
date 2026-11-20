@@ -18,8 +18,8 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Android SDK
-        uses: android-actions/setup-android@v3
+      # Android SDK er forhåndsinstallert på ubuntu-runneren (ANDROID_SDK_ROOT satt,
+      # lisenser godkjent), så vi bruker den direkte – egen setup-android trengs ikke.
 
       - name: Gradle
         uses: gradle/actions/setup-gradle@v4
