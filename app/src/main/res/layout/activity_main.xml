@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- POC: tittel + noen fokuserbare kort. Målet er bare å teste at appen vises,
+     kan festes, og at D-pad-en på fjernkontrollen flytter fokus og «OK» klikker. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0E1220"
+    android:paddingStart="56dp"
+    android:paddingEnd="56dp"
+    android:paddingTop="48dp"
+    android:paddingBottom="48dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TV-katalog"
+        android:textColor="#ECF0F8"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="34dp"
+        android:text="POC – test at fjernkontrollen flytter fokus og «OK» velger"
+        android:textColor="#90AAD0"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFilmer"
+            style="@style/Kort"
+            android:text="Filmer" />
+
+        <Button
+            android:id="@+id/btnSerier"
+            style="@style/Kort"
+            android:text="Serier" />
+
+        <Button
+            android:id="@+id/btnFortsett"
+            style="@style/Kort"
+            android:text="Fortsett" />
+
+        <Button
+            android:id="@+id/btnJellyfin"
+            style="@style/Kort"
+            android:text="Jellyfin" />
+
+        <Button
+            android:id="@+id/btnNrk"
+            style="@style/Kort"
+            android:text="NRK" />
+    </LinearLayout>
+
+</LinearLayout>
